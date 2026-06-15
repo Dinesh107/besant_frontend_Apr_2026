@@ -429,6 +429,47 @@ I/O operation, network requests, fetching data
 
 modified with: Callback, Promises, Async/wait
 
+Error Handling - An object that is created to represent a problem that occurs often with user input or establishing a connection
+
+try { } 
+
+catch { }
+
+finally { }
+
+runtime time error
+
+compile time error
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Node js, Express js, react native 
+
+Docker, S3 buckets, Virtual machine, EC2, Ubuntu linux os, linux commands
+
+mobile app 74 
+
+
 
 
 

@@ -1101,12 +1101,12 @@ kjadfhudshfdsfuo
 
 // console.log(person1.address.street);
 
-const fruits = [
-  { name: "orange", color: "yellow", calories: 95 },
-  { name: "apple", color: "red", calories: 100 },
-  { name: "coconut", color: "white", calories: 101 },
-  { name: "pineapple", color: "yellow", calories: 120 },
-];
+// const fruits = [
+//   { name: "orange", color: "yellow", calories: 95 },
+//   { name: "apple", color: "red", calories: 100 },
+//   { name: "coconut", color: "white", calories: 101 },
+//   { name: "pineapple", color: "yellow", calories: 120 },
+// ];
 
 // fruits.forEach(fruit => console.log(fruit.calories));
 
@@ -1219,4 +1219,47 @@ const fruits = [
 // }
 
 //  console.log("You have reached of the code");
+
+function task1(callback) {
+  setTimeout(() => {
+      console.log("Task 1 is completed");
+      callback();
+  }, 2000);
+}
+function task2(callback) {
+  setTimeout(() => {
+      console.log("Task 2 is completed");
+      callback();
+  }, 1000);
+}
+function task3(callback) {
+  setTimeout(() => {
+      console.log("Task 3 is completed");
+      callback();
+  }, 3000);
+}
+function task4(callback) {
+  setTimeout(() => {
+      console.log("Task 4 is completed");
+      callback();
+  }, 1500);
+}
+
+
+// task1();
+// task2();
+// task3();
+// task4();
+// console.log("all task is completed");
+
+
+task1(() => {
+  task2(() => {
+    task3(() => {
+      task4(() => {
+        console.log("All the ask is completed");
+      })
+    })
+  })
+})
 

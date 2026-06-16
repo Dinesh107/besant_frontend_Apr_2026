@@ -441,6 +441,27 @@ runtime time error
 
 compile time error
 
+Callback hell  - Situation in javascript where callbacks nested within other callbacks to the degree where the code is difficult to read. 
+
+old pattern to handle asynchrounous function 
+
+Use promise + async/awiat to avoid  callback Hello
+
+Promises 
+
+Async/await 
+
+JSON files 
+
+API data - fetching
+
+
+
+
+
+
+
+
 
 
 

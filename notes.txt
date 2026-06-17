@@ -447,7 +447,19 @@ old pattern to handle asynchrounous function
 
 Use promise + async/awiat to avoid  callback Hello
 
-Promises 
+Promises  - an object that manage asynchronous operations warp a Promise Object around (Asynchronous code) 
+
+"I promise to return a value"
+Pending -> Resolved or Rejected 
+
+new Promise((resolve, reject) => (asynchrous code))
+
+
+Examples - fetch the file, DB Connection, read and write the file
+
+
+
+
 
 Async/await 
 

@@ -461,7 +461,26 @@ Examples - fetch the file, DB Connection, read and write the file
 
 
 
-Async/await 
+Async/await - 
+
+async - makes a function return a promise
+await - make as async function wait for a promise 
+
+allow us to write asynchronous code in a synchronous manner, async does not resolve or reject parameters eberthing after await is placed in a event queue  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 JSON files 
 

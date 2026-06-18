@@ -1219,53 +1219,53 @@ kjadfhudshfdsfuo
 
 //  console.log("You have reached of the code");
 
-function task1(callback) {
-  setTimeout(() => {
-    console.log("Task 1 is completed");
-    callback();
-  }, 2000);
-}
-function task2(callback) {
-  setTimeout(() => {
-    console.log("Task 2 is completed");
-    callback();
-  }, 1000);
-}
-function task3(callback) {
-  setTimeout(() => {
-    console.log("Task 3 is completed");
-    callback();
-  }, 3000);
-}
-function task4(callback) {
-  setTimeout(() => {
-    console.log("Task 4 is completed");
-    callback();
-  }, 1500);
-}
+// function task1(callback) {
+//   setTimeout(() => {
+//     console.log("Task 1 is completed");
+//     callback();
+//   }, 2000);
+// }
+// function task2(callback) {
+//   setTimeout(() => {
+//     console.log("Task 2 is completed");
+//     callback();
+//   }, 1000);
+// }
+// function task3(callback) {
+//   setTimeout(() => {
+//     console.log("Task 3 is completed");
+//     callback();
+//   }, 3000);
+// }
+// function task4(callback) {
+//   setTimeout(() => {
+//     console.log("Task 4 is completed");
+//     callback();
+//   }, 1500);
+// }
 
-// task1();
-// task2();
-// task3();
-// task4();
-// console.log("all task is completed");
+// // task1();
+// // task2();
+// // task3();
+// // task4();
+// // console.log("all task is completed");
 
-// task1(() => {
-//   task2(() => {
-//     task3(() => {
-//       task4(() => {
-//         console.log("All the ask is completed")  ;
-//       })
-//     })
-//   })
-// })
+// // task1(() => {
+// //   task2(() => {
+// //     task3(() => {
+// //       task4(() => {
+// //         console.log("All the ask is completed")  ;
+// //       })
+// //     })
+// //   })
+// // })
 
-// walk the dog
-// take bath
-// makeBreakFast
-// clean the kitchen
-// take out the tarsh
-// go to office
+// // walk the dog
+// // take bath
+// // makeBreakFast
+// // clean the kitchen
+// // take out the tarsh
+// // go to office
 
 function walkDog() {
   return new Promise((resolve, reject) => {
@@ -1281,10 +1281,24 @@ function walkDog() {
   });
 }
 
+// async function walkDog() {
+//   return new Promise(() => {
+//     setTimeout(() => {
+//       const dogWalked = true;
+
+//       if (dogWalked) {
+//         resolve("You walk the dog");
+//       } else {
+//         reject("You didnt walk the dog");
+//       }
+//     }, 3000);
+//   });
+// }
+
 function cleanKitchen() {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
-      const kitchenCleaned = true;
+      const kitchenCleaned = false;
       if (kitchenCleaned) {
         resolve("You cleaned the kitchen!!");
       } else {
@@ -1307,19 +1321,42 @@ function takeOutTheTrash() {
   });
 }
 
-walkDog()
-  .then((value) => {
-    console.log(value);
-    return cleanKitchen();
-  })
-  .then((value) => {
-    console.log(value);
-    return takeOutTheTrash();
-  })
-  .then((value) => {
-    console.log(value);
-    console.log("You finished all the task");
-  }).catch(error => console.error(error));
+async function doTasks() {
+
+   try {
+   const walkDogResult = await walkDog();
+   console.log(walkDogResult);
+
+   const cleanKitchenResult = await cleanKitchen();
+   console.log(cleanKitchenResult);
+
+   const takeOutTheTrashResult = await takeOutTheTrash();
+   console.log(takeOutTheTrashResult);
+
+   console.log("You finished all the tasks");
+    
+   } catch (error) {
+       console.error(error);
+       
+   }
+   
+}
+
+doTasks();
+
+// walkDog()
+//   .then((value) => {
+//     console.log(value);
+//     return cleanKitchen();
+//   })
+//   .then((value) => {
+//     console.log(value);
+//     return takeOutTheTrash();
+//   })
+//   .then((value) => {
+//     console.log(value);
+//     console.log("You finished all the task");
+//   }).catch(error => console.error(error));
 
 // method chaining
 
@@ -1328,3 +1365,4 @@ walkDog()
 //     takeOutTheTrash(() => console.log("You finshed all the tasks"))
 //   })
 // })
+

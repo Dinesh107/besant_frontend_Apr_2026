@@ -469,6 +469,16 @@ await - make as async function wait for a promise
 allow us to write asynchronous code in a synchronous manner, async does not resolve or reject parameters eberthing after await is placed in a event queue  
 
 
+ 
+JSON files -  Javascript object notation data-interformat format
+used for exchanging data between a server and web application 
+
+JSON files {key : value} or [value1, value2, value3]
+
+
+JSON.stringify() = converts a js object to a json string
+
+JSON.parse() = converts a json string to a js object 
 
 
 
@@ -477,12 +487,6 @@ allow us to write asynchronous code in a synchronous manner, async does not reso
 
 
 
-
-
-
-
-
-JSON files 
 
 API data - fetching
 

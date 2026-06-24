@@ -1412,4 +1412,39 @@ kjadfhudshfdsfuo
 // console.log(jsonData);
 
 
+// get
+// fetch("https://jsonplaceholder.typicode.com/user")
+//       .then(response => {
+        // if(!response.ok) {
+        //    throw new Error("Cold not fetch the data");
+        // }
+        // return response.json();
+//       })
+//       .then(data => console.log(data))
+
+//       .catch(error => console.error(error))
+
+fetchData();
+
+async function fetchData() {
+    try {
+        const response = await fetch("https://jsonplaceholder.typicode.com/user")
+
+         if(!response.ok) {
+           throw new Error("Cold not fetch the data");
+        }
+        const data =  await response.json();
+
+        console.log(data);
+        
+
+    } catch(error) {
+        console.error(error);
+    }
+}
+
+  
+
+     
+
 

@@ -482,14 +482,14 @@ JSON.parse() = converts a json string to a js object
 
 
 
+API data - data fetching - fetch() - used for making HTTP requests to fetch resourses
 
+(JSON, imags, files)
 
+simlifying asynchrous data fetching in javascripts and used for interacting with APIs 
+to retrive and send data asynchronous over the web 
 
-
-
-
-API data - fetching
-
+fetch(url, {options})
 
 
 

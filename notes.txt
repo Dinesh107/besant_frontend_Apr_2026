@@ -492,6 +492,25 @@ to retrive and send data asynchronous over the web
 fetch(url, {options})
 
 
+Bootstrap 
+
+Container - View for mobile, tab, desktop 
+
+Grid Sysytem 
+
+Containers 
+
+fixed width container and full width conatiner 
+
+Typograpgy 
+
+
+Text colours -      
+
+
+
+
+
 
 
 

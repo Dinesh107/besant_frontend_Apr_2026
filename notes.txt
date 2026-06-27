@@ -505,7 +505,17 @@ fixed width container and full width conatiner
 Typograpgy 
 
 
-Text colours -      
+Text colours 
+
+
+
+
+
+
+
+
+
+
 
 
 
